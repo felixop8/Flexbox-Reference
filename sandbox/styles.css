@@ -1,0 +1,86 @@
+body {
+    margin: 0;
+}
+
+.container {
+    border: 6px solid black;
+    /* It is used to create a blocl-level or inline-level flex-container. */
+    display: flex;
+
+    /* 
+    Estalishes the main axis, which decides how tht flex items display inside the flex-container 
+    By default the main axis flows from legt to right.
+    Default value: "row"
+    */
+    flex-direction: row;
+
+    height: 800px;
+
+    /* 
+     by default all the flex-items in the container will try to fit into a single line, 
+     if there is not enought space the items simply overflow.
+     Default value: "nowrap"
+     */
+     /* flex-wrap: wrap; */
+
+     /* Shorthand for flex-direction and flex-wrap. flex-flow: <flex-direction><flex-wrap>*/
+     /* flex-flow: column-reverse wrap-reverse; */
+
+    /* Defines the alignment along the main axis. Default: flex-start*/
+     /* justify-content: flex-start; */
+
+    /* Defines how flex items are layout along the cross axis. Defaul: stretch */
+     align-items: center;
+
+     /* Aligns lines of content along the cross axis and distribute any extra spacing in the parent container
+     It is for multi line flexible boxes. It has no effect when items are in single line.
+     */
+     /* align-content: flex-start; */
+}
+
+.flex-item {
+    color: white;
+    font-size: 1.5rem;
+    padding: 1rem;
+    text-align: center;
+    flex-grow: 0;
+}
+
+.item-1 {
+  background-color: #B4BF35;
+  padding-bottom: 3rem;
+  /* flex-basis: 1px; */
+  align-self: flex-start;
+}
+.item-2 {
+  background-color: #B95F21;  
+  padding-bottom: 5rem;
+  align-self: flex-end;
+}
+.item-3 {
+  background-color: #1C4C56;  
+  /* font-size: 3rem; */
+  order: 1;
+  align-self: stretch;
+}
+.item-4 {
+  background-color: #CFB276;  
+}
+.item-5 {
+  background-color: #6B0803;
+  flex-shrink: 7;
+  flex-basis: 5px;
+}
+.item-6 {
+  background-color: #1C4C56;  
+}
+.item-7 {
+  background-color: #B95F21;
+  order: 2;
+}
+.item-8 {
+  background-color: #01243A;  
+}
+.item-9 {
+  background-color: #AAD041;  
+}
